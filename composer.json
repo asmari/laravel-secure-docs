@@ -1,0 +1,27 @@
+{
+    "name": "asmari/laravel-secure-docs",
+    "description": "A Laravel package to securely encrypt and store ID documents (KTP, SIM, etc).",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Asmari",
+            "email": "asmari.007@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Asmari\\SecureDocs\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Asmari\\SecureDocs\\SecureDocsServiceProvider"
+            ]
+        }
+    }
+}
