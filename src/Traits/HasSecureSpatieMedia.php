@@ -29,6 +29,7 @@ trait HasSecureSpatieMedia
                 'is_encrypted' => true,
                 'original_mime_type' => $file->getMimeType(),
                 'original_filename' => $file->getClientOriginalName(),
+                'uploaded_by_user_id' => auth()->id() ?? null,
             ])
             ->toMediaCollection($collectionName);
     }
